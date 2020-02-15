@@ -1,4 +1,4 @@
-describe('index.js', function() {
+describe('index.js', function(done) {
   describe('distanceFromHqInBlocks()', function() {
     it('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(43)).to.equal(1);
@@ -13,7 +13,7 @@ describe('index.js', function() {
     });
   });
 
-  describe('distanceFromHqInFeet()', function() {
+  describe('distanceFromHqInFeet()', function(done) {
     it('returns a distance in feet', function() {
       expect(distanceFromHqInFeet(43)).to.equal(264);
     });
@@ -27,7 +27,7 @@ describe('index.js', function() {
     });
   });
 
-  describe('distanceTravelledInFeet()', function() {
+  describe('distanceTravelledInFeet()', function(done) {
     it('returns the distance travelled in feet', function() {
       expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
     });
